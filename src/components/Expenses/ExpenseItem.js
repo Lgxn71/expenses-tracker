@@ -1,9 +1,17 @@
 import React from "react";
+
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
+  // const [title, setTitle] = useState(props.title);
+  // //useState() is like variable, to assign we put as an argument (props.smth) inside braces
+  // //return array [variable(current state) and function to set a new value]
+  // const changeTitleHandler = () => {
+  //   setTitle("Updated!");
+  //   //set a new value
+  // };
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
